@@ -2,8 +2,6 @@
 #include <ctime>
 #include <iostream>
 
-//doesn't work, card assignment is bunk!
-
 /* This card dealer will create a shuffled deck, then deal out cards as requested by the user.
 Internally, this will be done with an array of integers, the card's details will be determined as such:
 value % 4 = suit, value % 13 = rank
@@ -72,7 +70,7 @@ int main(){
         std::cout << "\n\n\n\n Press Enter to deal card!\n";
         std::cin.clear();
         std::cin.ignore(10000, '\n'); //https://stackoverflow.com/questions/5131647/why-would-we-call-cin-clear-and-cin-ignore-after-reading-input
-        //std::cin.get();
+        //std::cin.get();              //https://stackoverflow.com/questions/13556890/why-do-i-have-to-press-enter-twice
         draw_card(top_card_index, deck);
     }
 
